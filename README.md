@@ -37,4 +37,5 @@ npm run serve
 
 ## Author
 
-👤 **excitedhchips@gmail.com**
+👤 **niranjan@bakfy.me**
+👤 **prajwalp264@gmail.com**
