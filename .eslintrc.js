@@ -1,24 +1,25 @@
 module.exports = {
-  'env': {
-    'browser': true,
-    'es2020': true,
+  env: {
+    browser: true,
+    es2020: true,
   },
-  'extends': [
+  extends: [
     'airbnb',
   ],
-  'parser': 'babel-eslint',
-  'parserOptions': {
-    'ecmaFeatures': {
-      'jsx': true,
+  parser: 'babel-eslint',
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
     },
-    'ecmaVersion': 11,
-    'sourceType': 'module',
+    ecmaVersion: 11,
+    sourceType: 'module',
   },
-  'plugins': [
+  plugins: [
     'react',
   ],
-  'rules': {
+  rules: {
     'no-invalid-this': 0,
     'new-cap': 0,
+    'linebreak-style': 0,
   },
 };
