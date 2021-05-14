@@ -20,7 +20,16 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "prettier": "2.2.1"
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "husk": "^0.5.3",
+    "husky": "^4.3.8",
+    "prettier": "^2.2.1"
   },
   "keywords": [
     "gatsby"
@@ -33,13 +42,20 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "error": "./node_modules/.bin/eslint --ignore-path .gitignore .",
+    "fixlint": "./node_modules/.bin/eslint --ignore-path .gitignore . --fix",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/Prajwal264/Workspace"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/Prajwal264/Workspace/issues"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run error"
+    }
   }
 }
