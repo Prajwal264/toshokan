@@ -17,7 +17,7 @@ function dashboard() {
       <div className={styles.dashboardWrapper}>
         <div className={styles.adminWelcomeWrapper}>
           <StaticImage
-            src="../../images\dashboard\admin-avatar.png"
+            src="../../images/dashboard/admin-avatar.png"
             placeholder="blurred"
             width={50}
             alt="admin-avatar"
