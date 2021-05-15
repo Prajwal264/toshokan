@@ -3,32 +3,41 @@
 
 .app {
   min-height: 100vh;
-  width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 24px auto;
-  min-width: 1280px;
+  max-width: 1280px;
   @include respond(laptop) {
     margin: 0 auto;
     max-width: 100%;
-    min-width: unset
   }
   @include respond(tablet) {
     margin: 0 auto;
     max-width: 100%;
-    min-width: unset
   }
   @include respond(mobile) {
     margin: 0 auto;
     max-width: 100%;
-    min-width: unset
   }
   .flexWrapper {
     display: flex;
     background-color: #fafafb; // TODO: styles to come from a variable
     border-radius: 16px;
     box-shadow:  0 24px 64px 0 rgba(0, 0, 0, 0.02);
+    flex: 1;
+    @include respond(laptop) {
+      border-radius: unset;
+      box-shadow:  unset;
+    }
+    @include respond(tablet) {
+      border-radius: unset;
+      box-shadow:  unset;
+    }
+    @include respond(mobile) {
+      border-radius: unset;
+      box-shadow:  unset;
+    }
     .mainWrapper {
       padding: 24px 36px;
       @include respond(mobile) {
