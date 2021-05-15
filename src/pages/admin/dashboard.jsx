@@ -15,7 +15,7 @@ function dashboard() {
     <AppLayout>
       <div className={styles.dashboardWrapper}>
         <div className={styles.adminWelcomeWrapper}>
-          <StaticImage src="../../images\dashboard\admin-avatar.png" alt="admin-avatar" />
+          <StaticImage src="../../images\dashboard\admin-avatar.png" width={50} alt="admin-avatar" />
           <p className={styles.welcomePhrase}>
             <strong>Hi John,&nbsp;</strong>
             here is the status of your hiring pipeline.

@@ -31,6 +31,9 @@
     box-shadow:  0 24px 64px 0 rgba(0, 0, 0, 0.02);
     .mainWrapper {
       padding: 24px 36px;
+      @include respond(mobile) {
+        padding: 16px;
+      }
     }
   }
 }

@@ -9,6 +9,10 @@
     img {
       width: 50px;
       border-radius: 8px;
+      @include respond(mobile) {
+        min-width: 50px;
+        width: 100%;
+      }
     }
     .welcomePhrase {
       margin-left: 8px;
@@ -24,7 +28,7 @@
       flex-wrap: wrap;
     }
     @include respond(mobile) {
-      flex-wrap: wrap;
+      flex-direction: column;
     }
     .card {
       margin: 2px;
@@ -37,6 +41,9 @@
       min-width: 200px;
       width: max-content;
       border-radius: 4px;
+      @include respond(mobile) {
+        width: 100%;
+      }
       .typeWrapper {
         display: flex;
         align-items: center;
@@ -68,11 +75,15 @@
       display: flex;
       flex-direction: column;
       max-width: 50%;
+      @include respond(laptop) {
+        max-width: 100%;
+      }
       @include respond(tablet) {
         max-width: 100%;
       }
       @include respond(mobile) {
         max-width: 100%;
+        width: 100%;
       }
       .overview {
         display: flex;
@@ -108,6 +119,8 @@
             } 
             @include respond(mobile) {
               margin-bottom: 16px;
+              border: none;
+              min-width: unset;
             }
             .info {
               font-size: 22px;
