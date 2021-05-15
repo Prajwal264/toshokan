@@ -1,0 +1,29 @@
+/**
+ * Layout component that queries for data
+ * with Gatsby's useStaticQuery component
+ *
+ * See: https://www.gatsbyjs.com/docs/use-static-query/
+ */
+
+import * as React from 'react';
+import PropTypes from 'prop-types';
+import '../styles/_utils/_global.scss';
+import SideBar from './sidebar';
+import * as styles from '../styles/components/app-layout.module.scss';
+
+const AppLayout = ({ children }) => (
+  <>
+    <div className={styles.app}>
+      <div className={styles.flexWrapper}>
+        <SideBar />
+        <main className={styles.mainWrapper}>{children}</main>
+      </div>
+    </div>
+  </>
+);
+
+AppLayout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+export default AppLayout;

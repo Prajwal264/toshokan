@@ -1,0 +1,81 @@
+@import '../_utils/variables/';
+@import '../_utils/mixins';
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #090130;
+  padding: 24px 16px;
+  border-radius: 16px 0 0 16px;
+  min-width: 300px;
+  .adminInfoSection {
+    display: flex;
+    align-items: center;
+    .profile {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow:  0 24px 64px 0 rgba(0, 0, 0, 0.02);
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .companyDetailsWrapper {
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+      margin-left: 8px;
+      .companyName {
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 4px;
+      }
+      .role {
+        font-size: 13px;
+        font-weight: 400;
+        color: #808291; 
+      }
+    }
+  }
+  .createJobCta {
+    margin: 16px 0;
+    height: 2.81rem;
+    line-height: 2.8rem;
+    border-radius: 8px;
+    background-color: #4075ff;
+    color: white;
+    border: none;
+  }
+  .navigationPanel {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .navItem {
+      width: 100%;
+      margin-top: 8px;
+      a {
+        width: 100%;
+        color: #A6A3B6;
+        display: flex;
+        align-items: flex-end;
+        text-decoration: none;
+        padding: 12px;
+        border-radius: 8px;
+        img {
+          width: 20px;
+          height: 20px;
+          margin-right: 8px;
+        }
+        &.active {
+          color: #fff;
+          background-color: #282340;
+        }
+      }
+    }
+  }
+}

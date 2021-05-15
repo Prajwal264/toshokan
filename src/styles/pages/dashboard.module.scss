@@ -1,0 +1,260 @@
+@import '../_utils/variables';
+@import '../_utils/mixins';
+
+.dashboardWrapper {
+  .adminWelcomeWrapper{ 
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    img {
+      width: 50px;
+      border-radius: 8px;
+    }
+    .welcomePhrase {
+      margin-left: 8px;
+    }
+  }
+  .genericStatusWrapper {
+    display: flex;
+    align-items: center;
+    @include respond(laptop) {
+      flex-wrap: wrap;
+    }
+    @include respond(tablet) {
+      flex-wrap: wrap;
+    }
+    @include respond(mobile) {
+      flex-wrap: wrap;
+    }
+    .card {
+      margin: 2px;
+      background-color: #fff;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid #F8F8F9;
+      min-width: 200px;
+      width: max-content;
+      border-radius: 4px;
+      .typeWrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+        .type {
+          font-family: 'Roboto', sans-serif;
+          font-size: 18px;
+          color: #080430;
+          margin-right: 16px;
+        }
+        .updates {
+          color: #BBBEC4;
+          background-color: #FAFAFA;
+          padding: 4px;
+          font-size: 14px;
+          border-radius: 4px;
+        }
+      }
+      .status {
+        font-size: 30px;
+        font-weight: bold;
+      }
+    }
+  }
+  .content {
+    display: flex;
+    margin-top: 24px;
+    .leftSection {
+      display: flex;
+      flex-direction: column;
+      max-width: 50%;
+      @include respond(tablet) {
+        max-width: 100%;
+      }
+      @include respond(mobile) {
+        max-width: 100%;
+      }
+      .overview {
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        background-color: #fff;
+        border-radius: 8px;
+        .heading {
+          font-size: 16px;
+          font-weight: 600;
+          margin-bottom: 16px;
+          color: #4C505F;
+        }
+        .infoSection {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          @include respond(tablet) {
+            flex-wrap: wrap;
+            justify-content: unset;
+          } 
+          @include respond(mobile) {
+            flex-wrap: wrap;
+          }
+          .infoItem {
+            border-right: 1px solid #908e9d36;
+            display: flex;
+            flex-direction: column;
+            min-width: 150px;
+            margin-right: 24px;
+            @include respond(tablet) {
+              margin-bottom: 16px;
+            } 
+            @include respond(mobile) {
+              margin-bottom: 16px;
+            }
+            .info {
+              font-size: 22px;
+              font-weight: bold;
+              color: #06012F;
+              margin-bottom: 8px;
+            }
+            .label {
+              font-size: 14px;
+              color: #9593A1;
+            }
+          }
+          .infoItem:last-of-type {
+            border-right: none;
+            margin-right: unset;
+          }
+        }
+        .detailSection {
+          display: flex;
+          flex-direction: column;
+          margin-top: 16px;
+          .detailedItem {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 0;
+            .name {
+              font-size: 16px;
+              color: #908E9D;
+            }
+            .detail {
+              font-size: 16px;
+              font-weight: 600;
+              color: #211C45;
+            } 
+          }
+        }
+      }
+      .upcomingInterviews {
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        background-color: #fff;
+        border-radius: 8px;
+        margin-top: 24px;
+        .headingSection {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 24px;
+          .heading {
+            font-size: 16px;
+            font-weight: 600;
+            color: #4C505F;
+          }
+          a {
+            text-decoration: none;
+            color: #86A8FF;
+            font-weight: 600;
+          }
+        }
+        .interviewList {
+          display: flex;
+          flex-direction: column;
+          .interviewItem {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            .intervieweeDetails {
+              display: flex;
+              align-items: center;
+              img {
+                width: 40px;
+                margin-right: 8px;
+                border-radius: 50%;
+              }
+              .details {
+                display: flex;
+                flex-direction: column;
+                .name {
+                  font-size: 16px;
+                  color: #1E1942;
+                  margin-right: 8px;
+                  font-weight: 600;
+                }
+                .bio {
+                  font-size: 14px;
+                  color: #898796;
+                }
+              }
+            }
+            .interviewDate {
+              display: flex;
+              flex-direction: column;
+              
+              .month {
+                color: #A7A4B1;
+                font-size: 12px;
+                margin-bottom: 4px;
+              }
+              .day {  
+                font-weight: 600;
+                font-size: 20px;
+                color: #211C45;
+              }
+            }
+          }
+        }
+      }
+    }
+    .rightSection {
+      display: flex;
+      flex-direction: column;
+      // .jobListings {
+      //   display: flex;
+      //   flex-direction: column;
+      //   padding: 24px;
+      //   background-color: #fff;
+      //   border-radius: 8px;
+      //   margin-top: 24px;
+      //   .headingSection {
+      //     display: flex;
+      //     align-items: center;
+      //     justify-content: space-between;
+      //     margin-bottom: 24px;
+      //     .heading {
+      //       font-size: 16px;
+      //       font-weight: 600;
+      //       color: #4C505F;
+      //     }
+      //     a {
+      //       text-decoration: none;
+      //       color: #86A8FF;
+      //       font-weight: 600;
+      //     }
+      //   }
+      //   .jobList {
+      //     display: flex;
+      //     flex-direction: column;
+      //     .listItem {
+      //       display: flex;
+      //       align-items: center;
+      //       justify-content: space-around;
+      //     }
+      //   }
+      // }
+    }
+  }
+}
