@@ -50,8 +50,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "error": "./node_modules/.bin/eslint --ignore-path .gitignore .",
-    "fixlint": "./node_modules/.bin/eslint --ignore-path .gitignore . --fix",
-    "prepare": "husky install"
+    "fixlint": "./node_modules/.bin/eslint --ignore-path .gitignore . --fix"
   },
   "repository": {
     "type": "git",
