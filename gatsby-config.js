@@ -24,6 +24,12 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: 'gatsby-plugin-netlify-identity',
+      options: {
+        url: 'https://609e81deb9337bfefc66744e--agitated-raman-68793d.netlify.app/', // need to check this
+      },
+    },
     'gatsby-plugin-gatsby-cloud',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

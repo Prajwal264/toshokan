@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import * as React from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import '../styles/_utils/_global.scss';
 import SideBar from './sidebar';
@@ -21,7 +21,6 @@ const AppLayout = ({ children }) => (
     </div>
   </>
 );
-
 AppLayout.propTypes = {
   children: PropTypes.node.isRequired,
 };
