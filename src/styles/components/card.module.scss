@@ -1,0 +1,40 @@
+@import '../_utils/variables';
+@import '../_utils/mixins';
+
+.card {
+  margin: 2px;
+  background-color: #fff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #F8F8F9;
+  min-width: 200px;
+  width: max-content;
+  border-radius: 4px;
+  @include respond(mobile) {
+    width: 100%;
+  }
+  .typeWrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    .type {
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      color: #080430;
+      margin-right: 16px;
+    }
+    .updates {
+      color: #BBBEC4;
+      background-color: #FAFAFA;
+      padding: 4px;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+  }
+  .status {
+    font-size: 30px;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,76 @@
+@import '../_utils/variables/';
+@import '../_utils/mixins';
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #090130;
+  padding: 24px 16px;
+  border-radius: 16px 0 0 16px;
+  min-width: 300px;
+  @include respond(mobile) {
+    position: fixed;
+    bottom: 8px;
+    left: 0;
+    min-width: unset;
+    padding: 8px;
+    border-radius: 16px;
+    width: 100%;
+    z-index: 2;
+  }
+  @include respond(laptop) {
+    border-radius: unset;
+  }
+  @include respond(tablet) {
+    border-radius: unset;
+  }
+  .adminInfoSection {
+    display: flex;
+    align-items: center;
+    @include respond(mobile) {
+      display: none;
+    }
+    .profile {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow:  0 24px 64px 0 rgba(0, 0, 0, 0.02);
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .companyDetailsWrapper {
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+      margin-left: 8px;
+      .companyName {
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 4px;
+      }
+      .role {
+        font-size: 13px;
+        font-weight: 400;
+        color: #808291; 
+      }
+    }
+  }
+  .createJobCta {
+    margin: 16px 0;
+    height: 2.81rem;
+    line-height: 2.8rem;
+    border-radius: 8px;
+    background-color: #4075ff;
+    color: white;
+    border: none;
+    @include respond(mobile) {
+      display: none;
+    }
+  }
+}

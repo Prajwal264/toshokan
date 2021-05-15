@@ -17,15 +17,17 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: 'gatsby-plugin-sass',
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
-        start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
-        display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        cssLoaderOptions: {
+          camelCase: false,
+        },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-netlify-identity',
+      options: {
+        url: 'https://609e81deb9337bfefc66744e--agitated-raman-68793d.netlify.app/', // need to check this
       },
     },
     'gatsby-plugin-gatsby-cloud',
