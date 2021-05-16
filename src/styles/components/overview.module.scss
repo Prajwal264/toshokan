@@ -28,7 +28,7 @@
       border-right: 1px solid #908e9d36;
       display: flex;
       flex-direction: column;
-      min-width: 150px;
+      min-width: 140px;
       margin-right: 24px;
       @include respond(tablet) {
         margin-bottom: 16px;
@@ -52,6 +52,7 @@
     .infoItem:last-of-type {
       border-right: none;
       margin-right: unset;
+      width: max-content;
     }
   }
   .detailSection {
