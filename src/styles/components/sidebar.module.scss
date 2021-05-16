@@ -23,6 +23,7 @@
   }
   @include respond(tablet) {
     border-radius: unset;
+    min-width: 220px;
   }
   .adminInfoSection {
     display: flex;
