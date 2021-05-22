@@ -1,0 +1,147 @@
+@import '../_utils/variables';
+@import '../_utils/mixins';
+
+.applicationCard {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: $base-box-shadow;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  background-color: #ffffff;
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 24px 64px 0 rgba(0, 0, 0, 0.06);
+  }
+  @include respond(laptop) {
+    flex-direction: column;
+    align-items: unset;
+  }
+  @include respond(tablet) {
+    flex-direction: column;
+    align-items: unset;
+  }
+  @include respond(mobile) {
+    flex-direction: column;
+    align-items: unset;
+  }
+  .applicationInfoSection {
+    display: flex;
+    align-items: center;
+    @include respond(laptop) {
+      margin-bottom: 16px;
+    }
+    @include respond(tablet) {
+      margin-bottom: 16px;
+    }
+    @include respond(mobile) {
+      margin-bottom: 16px;
+    }
+    img {
+      width: 60px;
+      margin-right: 16px;
+      border-radius: 50%;
+    }
+    .applicantDetails {
+      display: flex;
+      flex-direction: column;
+      .name {
+        font-size: 14px;
+        color: #73C1F8;
+        font-weight: normal;
+        margin-bottom: 4px;
+      }
+      .jobTitle {
+        font-size: 18px;
+        font-weight: bold;
+        color: #475394;
+      }
+      .experience {
+        color: #AEB3D0;
+        font-size: 12px;
+      }
+    }
+  }
+  .applicationStatusSection {
+    display: flex;
+    align-items: center;
+    min-width: 40%;
+    margin-left: 24px;
+    @include respond(laptop) {
+      min-width: unset;
+      align-items: unset;
+      margin-left: unset;
+      flex-wrap: wrap;
+    }
+    @include respond(tablet) {
+      min-width: unset;
+      align-items: unset;
+      margin-left: unset;
+      flex-direction: column;
+    }
+    @include respond(mobile) {
+      min-width: unset;
+      align-items: unset;
+      margin-left: unset;
+      flex-direction: column;
+    }
+    .status {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 16px;
+      flex: 50%; 
+      @include respond(laptop) {
+        flex: 1;
+      }
+      @include respond(mobile) {
+        padding: 0;
+        margin-bottom: 8px;
+      }
+      @include respond(tablet) {
+        padding: 0;
+        margin-bottom: 8px;
+      }
+      .info {
+        font-size: 16px;
+        font-weight: bold;
+        color: #73C1F8;
+        padding: 8px;
+        border-radius: 8px;
+        border: 0.5px solid rgba(115, 193, 248, 0.3);
+        background-color: rgba(115, 193, 248, 0.1);
+        @include respond(mobile) {
+          word-break: break-all;
+        }
+        @include respond(tablet) {
+          word-break: break-all;
+        }
+        &.applicantStatus {
+          color: #00CF85;
+          border: 0.5px solid rgba(0, 207, 133, 0.3);
+          background-color: rgba(0, 207, 133, 0.1);
+        }
+      }
+      .label {
+        font-size: 14px;
+        color: #C8D1DC;
+        margin-bottom: 8px;
+      }
+    }
+    .status:nth-of-type(2) {
+      border-right: unset;
+      padding-right: unset;
+    }
+    .status:first-of-type {
+      padding-left: unset;
+    }
+    .status:last-of-type {
+      border-right: unset;
+      padding-right: unset;
+    }
+  }
+}
