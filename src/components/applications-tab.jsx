@@ -2,7 +2,7 @@ import React from 'react';
 import ApplicationCard from './application-card';
 import * as styles from '../styles/components/applications-tab.module.scss';
 
-function JobsTab() {
+function ApplicationsTab() {
   return (
     <div className={styles.applicationsTabWrapper}>
       <div className={styles.applicationsListing}>
@@ -15,4 +15,4 @@ function JobsTab() {
   );
 }
 
-export default JobsTab;
+export default ApplicationsTab;
