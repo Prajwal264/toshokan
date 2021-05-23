@@ -1,6 +1,6 @@
 import React from 'react';
 import ApplicationCard from './application-card';
-import * as styles from '../styles/components/applications-tab.module.scss';
+import * as styles from '../../styles/components/admin/applications-tab.module.scss';
 
 function ApplicationsTab() {
   return (

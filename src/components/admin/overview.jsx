@@ -1,5 +1,5 @@
 import React from 'react';
-import * as styles from '../styles/components/overview.module.scss';
+import * as styles from '../../styles/components/admin/overview.module.scss';
 
 function Overview() {
   return (

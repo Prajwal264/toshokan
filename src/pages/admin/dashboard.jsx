@@ -1,10 +1,10 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import AppLayout from '../../components/app-layout';
-import * as styles from '../../styles/pages/dashboard.module.scss';
-import Card from '../../components/card';
-import Overview from '../../components/overview';
-import UpcomingInterviews from '../../components/upcoming-interview';
+import AppLayout from '../../components/admin/app-layout';
+import * as styles from '../../styles/pages/admin/dashboard.module.scss';
+import Card from '../../components/admin/card';
+import Overview from '../../components/admin/overview';
+import UpcomingInterviews from '../../components/admin/upcoming-interview';
 
 /**
  *

@@ -1,6 +1,6 @@
 import React from 'react';
 import JobCard from './job-card';
-import * as styles from '../styles/components/jobs-tab.module.scss';
+import * as styles from '../../styles/components/admin/jobs-tab.module.scss';
 
 function JobsTab() {
   return (

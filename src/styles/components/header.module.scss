@@ -1,0 +1,45 @@
+@import '../_utils/variables';
+@import '../_utils/mixins';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow:  0 24px 64px 0 rgba(0, 0, 0, 0.02);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.07);
+  @include respond(mobile) {
+    padding: 16px;
+    border-radius: none;
+  }
+  .logoSection {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: #282340;
+    @include respond(mobile) {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  .navigationSection {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .navItem {
+      margin-right: 32px;
+      cursor: pointer;
+      .img {
+        border-radius: 50%;
+        width: 45px;
+      } 
+    }
+    .navItem:last-of-type {
+      margin-right: unset;
+    }
+  }
+}

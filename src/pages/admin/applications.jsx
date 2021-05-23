@@ -1,9 +1,9 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Nav, Tab } from 'react-bootstrap';
-import * as styles from '../../styles/pages/applications.module.scss';
-import AppLayout from '../../components/app-layout';
-import ApplicationsTab from '../../components/applications-tab';
+import * as styles from '../../styles/pages/admin/applications.module.scss';
+import AppLayout from '../../components/admin/app-layout';
+import ApplicationsTab from '../../components/admin/applications-tab';
 
 /**
  *

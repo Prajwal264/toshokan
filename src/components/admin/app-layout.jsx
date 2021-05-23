@@ -7,9 +7,9 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../styles/_utils/_global.scss';
+import '../../styles/_utils/_global.scss';
 import SideBar from './sidebar';
-import * as styles from '../styles/components/app-layout.module.scss';
+import * as styles from '../../styles/components/admin/app-layout.module.scss';
 
 const AppLayout = ({ children }) => (
   <>
