@@ -5,6 +5,7 @@ import * as styles from '../../styles/pages/admin/dashboard.module.scss';
 import Card from '../../components/admin/card';
 import Overview from '../../components/admin/overview';
 import UpcomingInterviews from '../../components/admin/upcoming-interview';
+import Seo from '../../components/seo';
 
 /**
  *
@@ -14,6 +15,10 @@ import UpcomingInterviews from '../../components/admin/upcoming-interview';
 function dashboard() {
   return (
     <AppLayout>
+      <Seo
+        title="Dashboard | Admin"
+        description="Here is the status of your hiring pipeline"
+      />
       <div className={styles.dashboardWrapper}>
         <div className={styles.adminWelcomeWrapper}>
           <StaticImage

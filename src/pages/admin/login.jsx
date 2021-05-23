@@ -3,6 +3,7 @@ import IdentityModal, { useIdentityContext } from 'react-netlify-identity-widget
 import { navigate } from 'gatsby';
 import * as styles from '../../styles/pages/admin/login.module.scss';
 import 'react-netlify-identity-widget/styles.css'; // delete if you want to bring your own CSS
+import Seo from '../../components/seo';
 
 function login() {
   const identity = useIdentityContext();
@@ -12,6 +13,10 @@ function login() {
   }
   return (
     <div className={styles.loginWrapper}>
+      <Seo
+        title="Jobs | Admin"
+        description="Login to  your Profile Now!"
+      />
       <div className={styles.loginContainer}>
         <IdentityModal showDialog={!isLoggedIn} />
       </div>

@@ -4,6 +4,7 @@ import { Nav, Tab } from 'react-bootstrap';
 import * as styles from '../../styles/pages/admin/jobs.module.scss';
 import AppLayout from '../../components/admin/app-layout';
 import JobsTab from '../../components/admin/jobs-tab';
+import Seo from '../../components/seo';
 
 /**
  *
@@ -13,6 +14,10 @@ import JobsTab from '../../components/admin/jobs-tab';
 function Jobs() {
   return (
     <AppLayout>
+      <Seo
+        title="Jobs | Admin"
+        description="Here are some jobs created by you"
+      />
       <div className={styles.jobsWrapper}>
         <div className={styles.adminWelcomeWrapper}>
           <StaticImage
