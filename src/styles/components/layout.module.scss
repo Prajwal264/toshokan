@@ -23,6 +23,7 @@
   }
   .flexWrapper {
     display: flex;
+    flex-direction: column;
     background-color: #fafafb; // TODO: styles to come from a variable
     border-radius: 16px;
     box-shadow:  0 24px 64px 0 rgba(0, 0, 0, 0.02);

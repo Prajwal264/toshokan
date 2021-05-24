@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as styles from '../styles/components/sidebar.module.scss';
+import * as styles from '../../styles/components/admin/sidebar.module.scss';
 import Nav from './nav';
 
 /**

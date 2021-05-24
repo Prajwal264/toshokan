@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import * as styles from '../styles/components/card.module.scss';
+import * as styles from '../../styles/components/admin/card.module.scss';
 
 function Card({ type, updates, status }) {
   return (

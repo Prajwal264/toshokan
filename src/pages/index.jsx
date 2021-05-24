@@ -8,7 +8,10 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     Home
+    <br />
     <Link to="/admin/dashboard/">Admin Dashboard</Link>
+    <br />
+    <Link to="/jobs/">jobs</Link>
   </Layout>
 );
 

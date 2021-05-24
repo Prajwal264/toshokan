@@ -1,6 +1,6 @@
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
-import * as styles from '../styles/components/application-card.module.scss';
+import * as styles from '../../styles/components/admin/application-card.module.scss';
 
 function ApplicationCard() {
   return (
@@ -8,7 +8,7 @@ function ApplicationCard() {
       <div className={styles.applicationInfoSection}>
         <StaticImage
           placeholder="blurred"
-          src="../images/dashboard/interviews/interviewee-2.jpg"
+          src="../../images/dashboard/interviews/interviewee-2.jpg"
           alt="Gretchen Bergson"
         />
         <div className={styles.applicantDetails}>

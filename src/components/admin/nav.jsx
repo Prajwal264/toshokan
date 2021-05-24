@@ -1,6 +1,6 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import * as styles from '../styles/components/nav.module.scss';
+import * as styles from '../../styles/components/admin/nav.module.scss';
 
 /**
  *

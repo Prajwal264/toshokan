@@ -1,5 +1,5 @@
 import React from 'react';
-import * as styles from '../styles/components/job-card.module.scss';
+import * as styles from '../../styles/components/admin/job-card.module.scss';
 
 function JobCard() {
   return (

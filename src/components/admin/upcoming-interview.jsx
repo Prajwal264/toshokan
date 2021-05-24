@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react';
-import * as styles from '../styles/components/upcominginterviews.module.scss';
+import * as styles from '../../styles/components/admin/upcominginterviews.module.scss';
 /**
  *
  *
@@ -19,7 +19,7 @@ function UpcomingInterviews() {
           <div className={styles.intervieweeDetails}>
             <StaticImage
               placeholder="blurred"
-              src="../images/dashboard/interviews/interviewee-1.jpg"
+              src="../../images/dashboard/interviews/interviewee-1.jpg"
               alt="Gretchen Bergson"
             />
             <div className={styles.details}>
@@ -36,7 +36,7 @@ function UpcomingInterviews() {
           <div className={styles.intervieweeDetails}>
             <StaticImage
               placeholder="blurred"
-              src="../images/dashboard/interviews/interviewee-2.jpg"
+              src="../../images/dashboard/interviews/interviewee-2.jpg"
               alt="Gretchen Bergson"
             />
             <div className={styles.details}>
@@ -53,7 +53,7 @@ function UpcomingInterviews() {
           <div className={styles.intervieweeDetails}>
             <StaticImage
               placeholder="blurred"
-              src="../images/dashboard/interviews/interviewee-3.jpg"
+              src="../../images/dashboard/interviews/interviewee-3.jpg"
               alt="Gretchen Bergson"
             />
             <div className={styles.details}>
@@ -70,7 +70,7 @@ function UpcomingInterviews() {
           <div className={styles.intervieweeDetails}>
             <StaticImage
               placeholder="blurred"
-              src="../images/dashboard/interviews/interviewee-4.jpg"
+              src="../../images/dashboard/interviews/interviewee-4.jpg"
               alt="Gretchen Bergson"
             />
             <div className={styles.details}>
