@@ -1,0 +1,93 @@
+@import '../../_utils/variables';
+@import '../../_utils/mixins';
+
+.applicationsWrapper {
+  .adminWelcomeWrapper{ 
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    img {
+      width: 50px;
+      border-radius: 8px;
+      @include respond(mobile) {
+        min-width: 50px;
+        width: 100%;
+      }
+    }
+    .welcomePhrase {
+      margin-left: 8px;
+    }
+  }
+  .tabContainer {
+    margin-top: 24px;
+    .navSwitcher {
+      display: flex;
+      align-items: center;
+      @include respond(tablet) {
+        flex-direction: column;
+        align-items: start;
+      }
+      @include respond(mobile) {
+        flex-wrap: wrap;
+      }
+      .pageTitle {
+        margin-right: 48px;
+        font-size: 24px;
+        font-weight: 600;
+        color: #1F2D54;
+      }
+      :global(.nav) {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        border-bottom: 1px solid #F0F2F5;
+        :global(.nav-item) {
+          display: flex;
+          align-items: center;
+          :global(.nav-link) {
+            padding: 16px 0;
+            margin: 0 24px;
+            color: #C8D1DC;
+            font-size: 16px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            &:global(.active) {
+              color: #495C81;
+              border-bottom: 1px solid #1f2d5481;
+              font-weight: 600;
+            }
+            :global(.info) {
+              background-color: #E0EFFA;
+              padding: 4px 8px;
+              border-radius: 8px;
+              color: #73C1F8;
+              font-size: 12px;
+              margin-left: 8px;
+            }
+          }
+          :global(.nav-link:first-of-type) {
+            @include respond(tablet) {
+              margin-left: unset;
+            }
+            @include respond(mobile) {
+              margin-left: unset;
+            }
+          }
+        }
+      }
+    }
+    :global(.tab-content) {
+      margin-top: 24px;
+      :global(.tab-pane){
+        display: none;
+        &:global(.active) {
+          display: block;
+        }
+        &:global(.fade) {
+          transition: opacity .15s linear;
+        }
+      }
+    }
+  }
+}

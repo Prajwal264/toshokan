@@ -1,0 +1,57 @@
+@import '../../_utils/variables';
+@import '../../_utils/mixins';
+
+.dashboardWrapper {
+  .adminWelcomeWrapper{ 
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    img {
+      width: 50px;
+      border-radius: 8px;
+      @include respond(mobile) {
+        min-width: 50px;
+        width: 100%;
+      }
+    }
+    .welcomePhrase {
+      margin-left: 8px;
+    }
+  }
+  .genericStatusWrapper {
+    display: flex;
+    align-items: center;
+    @include respond(laptop) {
+      flex-wrap: wrap;
+    }
+    @include respond(tablet) {
+      flex-wrap: wrap;
+    }
+    @include respond(mobile) {
+      flex-direction: column;
+    }
+  }
+  .content {
+    display: flex;
+    margin-top: 24px;
+    .leftSection {
+      display: flex;
+      flex-direction: column;
+      max-width: 50%;
+      @include respond(laptop) {
+        max-width: 100%;
+      }
+      @include respond(tablet) {
+        max-width: 100%;
+      }
+      @include respond(mobile) {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+    .rightSection {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

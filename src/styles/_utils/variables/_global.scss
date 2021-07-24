@@ -1,0 +1,15 @@
+/*  Visual. */
+$base-spacing: 20px;
+$base-border-radius: 16px;
+$base-easing-function: cubic-bezier(0, 0, 0.2, 1);
+$base-box-shadow:  0 24px 64px 0 rgba(0, 0, 0, 0.02);
+
+/* Fonts */
+$base-font-family: "Inter", sans-serif, -apple-system, system-ui,
+  BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+$secondary-font-family: "Roboto",sans-serif, -apple-system, system-ui,
+BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+$base-font-weight: $weight-regular;
+$base-font-size: $size-normal;
+$base-line-height: 1.15;
+

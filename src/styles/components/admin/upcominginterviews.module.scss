@@ -1,0 +1,75 @@
+@import '../../_utils/variables';
+@import '../../_utils/mixins';
+
+.upcomingInterviews {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 24px;
+  .headingSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    .heading {
+      font-size: 16px;
+      font-weight: 600;
+      color: #4C505F;
+    }
+    a {
+      text-decoration: none;
+      color: #86A8FF;
+      font-weight: 600;
+    }
+  }
+  .interviewList {
+    display: flex;
+    flex-direction: column;
+    .interviewItem {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+      .intervieweeDetails {
+        display: flex;
+        align-items: center;
+        img {
+          width: 40px;
+          margin-right: 8px;
+          border-radius: 50%;
+        }
+        .details {
+          display: flex;
+          flex-direction: column;
+          .name {
+            font-size: 16px;
+            color: #1E1942;
+            margin-right: 8px;
+            font-weight: 600;
+          }
+          .bio {
+            font-size: 14px;
+            color: #898796;
+          }
+        }
+      }
+      .interviewDate {
+        display: flex;
+        flex-direction: column;
+        
+        .month {
+          color: #A7A4B1;
+          font-size: 12px;
+          margin-bottom: 4px;
+        }
+        .day {  
+          font-weight: 600;
+          font-size: 20px;
+          color: #211C45;
+        }
+      }
+    }
+  }
+}
