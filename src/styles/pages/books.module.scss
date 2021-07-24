@@ -1,0 +1,11 @@
+@import '../_utils/variables';
+@import '../_utils/mixins';
+.jobsWrapper {
+  display: flex;
+  @include respond(mobile) {
+    flex-direction: column-reverse;
+  }
+  @include respond(tablet) {
+    flex-direction: column-reverse;
+  }
+}

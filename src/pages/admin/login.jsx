@@ -14,7 +14,7 @@ function login() {
   return (
     <div className={styles.loginWrapper}>
       <Seo
-        title="Jobs | Admin"
+        title="books | Admin"
         description="Login to  your Profile Now!"
       />
       <div className={styles.loginContainer}>

@@ -11,7 +11,7 @@ const IndexPage = () => (
     <br />
     <Link to="/admin/dashboard/">Admin Dashboard</Link>
     <br />
-    <Link to="/jobs/">jobs</Link>
+    <Link to="/books/">books</Link>
   </Layout>
 );
 

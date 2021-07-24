@@ -5,7 +5,7 @@ import * as styles from '../styles/components/header.module.scss';
 const Header = () => (
   <header className={styles.header}>
     <div className={styles.logoSection}>
-      Workspace.
+      Toskokan.
     </div>
     <div className={styles.navigationSection}>
       <div className={styles.navItem}>

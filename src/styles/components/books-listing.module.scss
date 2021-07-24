@@ -1,0 +1,22 @@
+@import '../_utils/variables';
+@import '../_utils/mixins';
+
+.jobList {
+  display: flex;
+  flex-direction: column;
+  margin-right: 16px;
+  @include respond(mobile) {
+    margin-top: 24px;
+    flex-direction: row;
+    position: relative;
+    overflow: scroll;
+    margin-right: unset;
+  }
+  @include respond(tablet) {
+    margin-top: 24px;
+    flex-direction: row;
+    position: relative;
+    overflow: scroll;
+    margin-right: unset;
+  }
+}

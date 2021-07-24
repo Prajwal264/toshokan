@@ -17,9 +17,9 @@ function Nav() {
         </Link>
       </div>
       <div className={styles.navItem}>
-        <Link to="/admin/jobs/" activeClassName={styles.active}>
-          <img src="/sidebar/jobs-ico.svg" alt="jobs-ico" />
-          <p>Jobs</p>
+        <Link to="/admin/books/" activeClassName={styles.active}>
+          <img src="/sidebar/books-ico.svg" alt="books-ico" />
+          <p>books</p>
         </Link>
       </div>
       <div className={styles.navItem}>

@@ -9,7 +9,7 @@ function SearchBar() {
         <input type="text" />
       </div>
       <div className={styles.ctaSection}>
-        <button type="button">Find Jobs</button>
+        <button type="button">Find books</button>
       </div>
     </div>
   );
