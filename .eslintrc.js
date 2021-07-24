@@ -3,9 +3,7 @@ module.exports = {
     browser: true,
     es2020: true,
   },
-  extends: [
-    'airbnb',
-  ],
+  extends: ['airbnb'],
   parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
@@ -14,12 +12,11 @@ module.exports = {
     ecmaVersion: 11,
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-  ],
+  plugins: ['react'],
   rules: {
     'no-invalid-this': 0,
     'new-cap': 0,
     'linebreak-style': 0,
+    'max-classes-per-file': 0,
   },
 };
