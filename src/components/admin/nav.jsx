@@ -11,7 +11,7 @@ function Nav() {
   return (
     <nav className={styles.navigationPanel}>
       <div className={styles.navItem}>
-        <Link to="/admin/dashboard/" activeClassName={styles.active}>
+        <Link to="/admin/" activeClassName={styles.active}>
           <img src="/sidebar/dashboard-ico.svg" alt="dashboard-ico" />
           <p>Dashboard</p>
         </Link>
@@ -19,7 +19,7 @@ function Nav() {
       <div className={styles.navItem}>
         <Link to="/admin/books/" activeClassName={styles.active}>
           <img src="/sidebar/books-ico.svg" alt="books-ico" />
-          <p>books</p>
+          <p>Books</p>
         </Link>
       </div>
       <div className={styles.navItem}>

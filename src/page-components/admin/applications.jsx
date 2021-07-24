@@ -1,9 +1,8 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Nav, Tab } from 'react-bootstrap';
-import * as styles from '../../styles/pages/admin/books.module.scss';
-import AppLayout from '../../components/admin/app-layout';
-import JobsTab from '../../components/admin/books-tab';
+import * as styles from '../../styles/pages/admin/applications.module.scss';
+import ApplicationsTab from '../../components/admin/applications-tab';
 import Seo from '../../components/seo';
 
 /**
@@ -11,14 +10,14 @@ import Seo from '../../components/seo';
  *
  * @return {*}
  */
-function books() {
+function Applications() {
   return (
-    <AppLayout>
+    <>
       <Seo
-        title="Books | Admin"
-        description="Here are some books created by you"
+        title="Applications | Admin"
+        description="Here's a list of applicants"
       />
-      <div className={styles.jobsWrapper}>
+      <div className={styles.applicationsWrapper}>
         <div className={styles.adminWelcomeWrapper}>
           <StaticImage
             src="../../images/dashboard/admin-avatar.png"
@@ -34,7 +33,7 @@ function books() {
         <div className={styles.tabContainer}>
           <Tab.Container defaultActiveKey="active">
             <div className={styles.navSwitcher}>
-              <p className={styles.pageTitle}>books</p>
+              <p className={styles.pageTitle}>Applications</p>
               <Nav>
                 <Nav.Item>
                   <Nav.Link eventKey="active">
@@ -52,18 +51,17 @@ function books() {
             </div>
             <Tab.Content>
               <Tab.Pane eventKey="active">
-                <JobsTab status="active" />
+                <ApplicationsTab status="active" />
               </Tab.Pane>
               <Tab.Pane eventKey="closed">
-                <JobsTab status="closed" />
+                <ApplicationsTab status="closed" />
               </Tab.Pane>
             </Tab.Content>
-
           </Tab.Container>
         </div>
       </div>
-    </AppLayout>
+    </>
   );
 }
 
-export default books;
+export default Applications;

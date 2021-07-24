@@ -18,7 +18,7 @@ const SideBar = () => (
       </div>
     </div>
     <button type="button" className={styles.createJobCta}>
-      + Create New book
+      + Add New book
     </button>
     <Nav />
   </div>

@@ -18,5 +18,6 @@ module.exports = {
     'new-cap': 0,
     'linebreak-style': 0,
     'max-classes-per-file': 0,
+    'react/jsx-props-no-spreading': 0,
   },
 };
