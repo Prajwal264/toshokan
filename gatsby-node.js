@@ -10,9 +10,9 @@ exports.onCreatePage = async ({ page, actions }) => {
 
   // page.matchPath is a special key that's used for matching pages
   // only on the client.
-  if (page.path.match(/^\/admin/)) {
+  if (page.path === '/') {
     // eslint-disable-next-line no-param-reassign
-    page.matchPath = '/admin/*';
+    page.matchPath = '/*';
 
     // Update the page.
     createPage(page);

@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Workspace',
-    description: 'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
+    description:
+      'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
     author: '@gatsbyjs',
   },
   plugins: [
@@ -22,12 +23,6 @@ module.exports = {
         cssLoaderOptions: {
           camelCase: false,
         },
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-netlify-identity',
-      options: {
-        url: 'https://609e81deb9337bfefc66744e--agitated-raman-68793d.netlify.app/', // need to check this
       },
     },
     'gatsby-plugin-gatsby-cloud',
