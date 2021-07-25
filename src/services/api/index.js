@@ -38,6 +38,15 @@ class Graphql {
  */
 class User extends Graphql {
   /**
+   * Creates an instance of User.
+   * @memberof User
+   */
+  // eslint-disable-next-line no-useless-constructor
+  constructor() {
+    super();
+  }
+
+  /**
    *
    * returns a mutation string to
    * register a user.
@@ -50,10 +59,12 @@ class User extends Graphql {
         $username: String!
         $email: String!
         $password: String!
-        $role: String!
+        $role: UserRole!
       ) {
-        id
-        token
+        register(username: $username, email: $email, password: $password, role: $role) {          
+          id
+          token
+        }
       }
     `;
     return REGISTER_MUTATION;
