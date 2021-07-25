@@ -1,4 +1,5 @@
 import { useMutation } from '@apollo/client';
+import { navigate } from 'gatsby';
 import React, { useState } from 'react';
 import toast, { Toaster } from 'react-hot-toast';
 import { User } from '../services/api';
@@ -60,19 +61,27 @@ function Register() {
   const register = async (e) => {
     e.preventDefault();
     if (validateFormElements()) {
-      const registerPromise = registerUser({
-        variables: {
-          username: formData.username,
-          email: formData.email,
-          role: formData.role,
-          password: formData.password,
-        },
-      });
-      toast.promise(registerPromise, {
-        loading: 'Registering',
-        success: 'User Registered',
-        error: 'Error while registering user',
-      });
+      try {
+        const registerPromise = registerUser({
+          variables: {
+            username: formData.username,
+            email: formData.email,
+            role: formData.role,
+            password: formData.password,
+          },
+        });
+        toast.promise(registerPromise, {
+          loading: 'Registering',
+          success: 'User Registered',
+          error: 'Error while registering user',
+        });
+
+        const { data: { register: { token } } } = await registerPromise;
+        console.log(token);
+        navigate('/login');
+      } catch (err) {
+        console.log(err);
+      }
     }
   };
 

@@ -69,6 +69,21 @@ class User extends Graphql {
     `;
     return REGISTER_MUTATION;
   }
+
+  login() {
+    const LOGIN_MUTATION = this.gql`
+      mutation Login($email: String!, $password: String!) {
+        login(email: $email, password: $password) {
+          token 
+          user {
+            id
+            role
+          }
+        }
+      }
+    `;
+    return LOGIN_MUTATION;
+  }
 }
 
 export { Graphql, User };

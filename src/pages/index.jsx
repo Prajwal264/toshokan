@@ -4,24 +4,24 @@ import { Router } from '@reach/router';
 import AppLayout from '../components/layout';
 import AdminLayout from '../components/admin/app-layout';
 import Dashboard from '../page-components/admin/dashboard';
-import Applications from '../page-components/admin/applications';
 import ConsumerBooks from '../page-components/app/books';
-import Books from '../page-components/admin/books';
-import Canidates from '../page-components/admin/candidates';
+import Candidates from '../page-components/admin/candidates';
 import PrivateRoute from '../components/PrivateRoute';
 import Register from '../page-components/register';
+import Login from '../page-components/login';
+import Library from '../page-components/admin/library';
 
 const IndexPage = () => (
   <Router>
     <Register path="/register" />
+    <Login path="/login" />
     <AppLayout path="/app">
       <ConsumerBooks path="/books" />
     </AppLayout>
+    <PrivateRoute path="/admin/library" component={Library} />
     <AdminLayout path="/admin">
       <PrivateRoute path="/" component={Dashboard} />
-      <PrivateRoute path="/books" component={Books} />
-      <PrivateRoute path="/applications" component={Applications} />
-      <PrivateRoute path="/candidates" component={Canidates} />
+      <PrivateRoute path="/candidates" component={Candidates} />
     </AdminLayout>
   </Router>
 );
